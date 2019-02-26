@@ -12,14 +12,17 @@ function frameIt(){
      img1.className="tasty"
   })
 }
-$(document).ready(function(){
 
 function pressIt(){
-  $('#typing').on("keydown",(e)=>{
-    var img1=document.querySelector('img')
-    img1.className="tasty"
-  })
+  $('form > input').keydown(function(e){
+    if(e.which == 71){
+      alert("You have pressed G");
+    }
+  });
 }
+
+$(document).ready(function(){
+
 
 // call functions here
 
