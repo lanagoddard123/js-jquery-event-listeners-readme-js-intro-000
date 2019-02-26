@@ -21,6 +21,12 @@ function pressIt(){
   });
 }
 
+$("form").on("submit", function() {
+  if ($( "input:first" ).val() === "correct") {
+    alert('your form is going to be submitted now');
+    return;
+  }
+
 $(document).ready(function(){
 
 
